@@ -43,5 +43,9 @@ async def put_piece(player: int, col: int):
 
 
 if __name__ == "__main__":
-    uvicorn.run(app)
+    import socket
+    port = 5000
+    host = '0.0.0.0'  # visible on local network by IP
+    print(f' go to http://{socket.gethostbyname(socket.gethostname())}:{port}')
+    uvicorn.run(app, host=host, port=port)
 
