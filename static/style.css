@@ -1,0 +1,28 @@
+#game-grid {
+    display: flex;
+    flex-direction: column;
+}
+
+.game-row {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.game-tile {
+    height: 5em;
+    width: 5em;
+    border-radius: 2.5em;
+    margin: .5em;
+    border: 2px black solid;
+}
+
+.game-tile:hover {
+    border-color: gray;
+}
+
+.player1 {
+    background-color: red;
+}
+
+.player2 {
+    background-color: blue;
+}
